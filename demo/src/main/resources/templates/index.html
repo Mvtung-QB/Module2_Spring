@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>List Product</title>
+    <style>
+
+        img{
+            width:50px;
+            height: 50px;
+        }
+        div{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<center>
+<form>
+    <div>
+        <th:block th:each="p: ${products}">
+            <div>
+                <ul><img th:src="${p.image}"> </ul>
+                <ul ><a th:href="@{/__${p.masp}__ }">Xem Thông tin</a></ul>
+                <ul th:text="${p.nameProduct}"></ul>
+                <ul th:text="${p.gia}"></ul>
+                <ul><a th:href="@{/select/__${p.masp}__ }">Chọn</a></ul>
+            </div>
+        </th:block>
+
+    </div>
+    <div>
+    <table border="2" align="right">
+        <tr>
+            <td>Anh </td>
+            <td>Mã SP </td>
+            <td>Tên Sản Phẩm</td>
+            <td>Giá</td>
+            <td>Số Lượng</td>
+            <td>Thành tiền</td>
+            <td>Xoá khỏi giỏ</td>
+            <td>Sửa</td>
+        </tr>
+        <th:block th:each="p: ${listProduct.values()}">
+            <tr>
+                <td><img th:src="${p.product.image}"> </td>
+                <td th:text="${p.product.masp}"></td>
+                <td th:text="${p.product.nameProduct}"></td>
+                <td th:text="${p.product.gia}"></td>
+                <td th:text="${p.quantity}"></td>
+                <td th:text="${p.total()}"></td>
+                <td><a th:href="@{/delete/__${p.product.masp}__ }">delete</a></td>
+                <td><a th:href="@{/update/__${p.product.masp}__ }">Sửa</a></td>
+            </tr>
+        </th:block>
+    </table>
+    </div>
+
+</form>
+</center>
+    <div>
+        <form action="/total"  method="post">
+            <input type="submit" value="total">
+            <h3 th:text="${total}" ></h3>
+        </form>
+    </div>
+
+
+</body>
+</html>

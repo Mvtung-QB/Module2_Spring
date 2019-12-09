@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>view</title>
+    <style>
+        img{
+            width:50px;
+            height: 50px;
+        }
+        div{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<a href="/">back to index</a>
+<form th:object="${cart}" action="/save" method="post">
+    <div >
+        <input type="image" th:src="${cart.getProduct().getImage()}"> <br>
+        <input type="text" th:field="*{product.masp}"> <br>
+        <input type="text" th:field="*{product.nameProduct}"> <br>
+        <input type="text" th:field="*{product.gia}"> <br>
+        <input name="quantity" type="text" th:field="${cart.quantity}"/> <br>
+        <input type="submit" value="save" />
+    </div>
+</form>
+</body>
+</html>

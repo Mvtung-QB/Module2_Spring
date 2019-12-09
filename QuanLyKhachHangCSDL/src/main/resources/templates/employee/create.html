@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create employee</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .bg {
+            /* The image used */
+            background-image: url("anhnen.jpg");
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        button{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Create employee</h1>
+<p>
+    <a href="/employees">employee list</a>
+</p>
+<form th:action="@{/create-employee}" th:object="${employee}" method="post">
+    <table>
+        <tr>
+            <td>id:</td>
+            <td><input type="text" th:field="*{id}"/></td>
+        </tr>
+        <tr>
+            <td>ten:</td>
+            <td><input type="text" th:field="*{ten}"/></td>
+        </tr>
+        <tr>
+            <td>tuoi:</td>
+            <td><input type="text" th:field="*{tuoi}"/></td>
+        </tr>
+        <tr>
+            <td>diachi:</td>
+            <td><input type="text" th:field="*{diachi}"/></td>
+        </tr>
+        <tr>
+            <td>lop:</td>
+            <td><input type="text" th:field="*{lop}"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Create employee"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

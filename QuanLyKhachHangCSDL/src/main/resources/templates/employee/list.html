@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/create-employee">Create new employee</a>
+<h1>Employees</h1>
+<form>
+<table border="1">
+    <tr>
+        <th>ten</th>
+        <th>tuoi</th>
+        <th>diachi</th>
+        <th>lop</th>
+    </tr>
+    <th:block th:each="employee : ${employees}">
+        <tr>
+            <td th:text="${employee.getTen()}"></td>
+            <td th:text="${employee.getTuoi()}"></td>
+            <td th:text="${employee.getDiachi()}"></td>
+            <td th:text="${employee.getlop()}"></td>
+        </tr>
+    </th:block>
+</table>
+</form>
+</body>
+</html>

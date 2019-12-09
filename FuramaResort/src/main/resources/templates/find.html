@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head  th:replace="layout :: head"></head>
+<body>
+<tbody th:replace="layout :: tbody"></tbody>
+<form method="post" th:object="${listService}">
+    <label>rentalCosts to</label>
+    <input type="number" name="rentalCosts1">
+    <label>rentalCosts</label>
+    <input type="number" name="rentalCosts2">
+    <input type="submit" value="Find">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Tên service</th>
+                <th>Diện Tích</th>
+                <th>Số người tối đa</th>
+                <th>Kiểu thuê</th>
+                <th>Chi Phí Thuê</th>
+                <th>Mô tả</th>
+                <th>Số tầng</th>
+            </tr>
+            </thead>
+            <tbody>
+            <th:block th:each="p: ${listService}" >
+                <tr>
+                    <td th:text="${p.nameServises}"></td>
+                    <td th:text="${p.areaUse}"></td>
+                    <td th:text="${p.maxUser}"></td>
+                    <td th:text="${p.idKieuThue}"></td>
+                    <td th:text="${p.rentalCosts}"></td>
+                    <td th:text="${p.trangThai}"></td>
+                    <td th:text="${p.soTang}"></td>
+                </tr>
+            </th:block>
+            </tbody>
+    </table>
+</form>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

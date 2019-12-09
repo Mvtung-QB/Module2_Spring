@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0162aee5-7c62-4b2a-bb53-a64ed580aac9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLy/src/controller/Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLy/src/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLy/src/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLy/src/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLy/web/Customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLy/web/Customer/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLy/web/Customer/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLy/web/Customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLy/web/Customer/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLySanPham/src/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLySanPham/src/model/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLySanPham/src/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLySanPham/src/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLySanPham/web/products/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLySanPham/web/products/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLySanPham/web/products/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLySanPham/web/products/find.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLySanPham/web/products/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/QuanLySanPham/web/products/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/UngDungDoiTien/src/controllers/ConvertCntroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/UngDungDoiTien/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/UngDungDoiTien/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/UngDungTuDien/src/controllers/TuDien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/UngDungTuDien/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVCmodule2/UngDungTuDien/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WebAplication/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WebAplication/src/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sevletmodule2/sevlet/Calculator/src/Caculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sevletmodule2/sevlet/Calculator/src/CaculatorServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sevletmodule2/sevlet/CurrencyConvert/web/Convert.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sevletmodule2/sevlet/Dictionary/src/DictionarySevlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sevletmodule2/sevlet/DictionaryJSP/web/dictionary.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sevletmodule2/sevlet/DisplayCustomer/src/Controler/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sevletmodule2/sevlet/DisplayCustomer/src/Dao/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sevletmodule2/sevlet/DisplayCustomer/src/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sevletmodule2/sevlet/DisplayCustomer/web/customer/editCustomer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sevletmodule2/sevlet/DisplayCustomer/web/customer/newCustomer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sevletmodule2/sevlet/java-web-currency-converter/src/Convert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sevletmodule2/sevlet/login/src/loginSevlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springMVC/RequesMappingdemo/src/main/com/codegym/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springMVC/RequesMappingdemo/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springMVC/RequesMappingdemo/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springMVC/RequesMappingdemo/web/WEB-INF/views/method0.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springMVC/RequesMappingdemo/web/WEB-INF/views/method1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springMVC/RequesMappingdemo/web/WEB-INF/views/method2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springMVC/RequesMappingdemo/web/WEB-INF/views/method7.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springMVC/RequesMappingdemo/web/WEB-INF/views/method8.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springMVC/greeting/src/controller/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springMVC/greeting/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../springMVC/greeting/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CheckEmail/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CheckEmail/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CheckEmail/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CheckEmail/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CheckEmail/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CheckEmail/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CheckEmail/src/main/webapp/WEB-INF/configs/spring-config-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UngDungLogin/src/com/codegym/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UngDungLogin/src/com/codegym/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UngDungLogin/src/com/codegym/model/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UngDungLogin/src/com/codegym/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UngDungLogin/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UngDungLogin/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UngDungLogin/web/WEB-INF/views/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UngDungLogin/web/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UngDungLogin/web/WEB-INF/views/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Workspace\springcontroller\spring-email-validate\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Tmg0OqhC9loOzcqednk1TWoOfP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0162aee5-7c62-4b2a-bb53-a64ed580aac9" name="Default Changelist" comment="" />
+      <created>1574070460488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574070460488</updated>
+      <workItem from="1574070464387" duration="516000" />
+      <workItem from="1574080225567" duration="310000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

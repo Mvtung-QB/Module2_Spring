@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head  th:replace="layout :: head"></head>
+<body>
+<tbody th:replace="layout :: tbody"></tbody>
+<div>
+    <th:block th:each="p: ${likeservice}" >
+        <div style="float: left" class="rows">
+            <ul><img height="200" width="200" th:src="@{image/__${p.image}__}" ></ul>
+            <ul th:align="center"><a th:href="@{/__${p.id}__}">Xem thong tin</a></ul>
+            <ul th:align="center" th:text="${p.nameServises}"></ul>
+            <ul th:align="center" th:text="${p.areaUse}"></ul>
+            <ul th:align="center" th:text="${p.trangThai}"></ul>
+            <ul th:align="center"><a th:href="@{dislike/__${p.id}__}">Dis Like</a></ul>
+        </div>
+    </th:block>
+</div>
+<footer th:replace="layout :: footer" style="width: 700px"></footer>
+</body>
+</html>

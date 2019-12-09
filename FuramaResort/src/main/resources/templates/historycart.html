@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+<tbody th:replace="layout :: tbody"></tbody>
+<form>
+    <div>
+    <th:block th:each="p: ${listBooking}" >
+        <div style="float: left" class="rows">
+            <ul><img height="200" width="200" th:src="@{image/__${p.id.image}__}" ></ul>
+
+            <ul th:text="${'Mã HD:'+p.idHopDong}"></ul>
+            <ul th:text="${'Ngày Booking: '+ p.ngayLamHopDong}"></ul>
+            <ul th:text="${'Ngày Kết thúc: '+ p.ngayketThuc}"></ul>
+            <ul th:text="${'Tên DV: '+ p.id.getNameServises()}"></ul>
+            <ul th:text="${'Tiền đã cọc: '+ p.tienDatCoc}"></ul>
+        </div>
+    </th:block>
+    </div>
+</form>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

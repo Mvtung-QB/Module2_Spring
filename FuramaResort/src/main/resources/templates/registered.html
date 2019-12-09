@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head  th:replace="layout :: head">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<tbody th:replace="layout :: tbody"></tbody>
+
+<form method="post" action="/registered" th:object="${customer}">
+    <div class="container register-form">
+        <div class="form">
+            <div class="note">
+                <p>Registered new customer</p>
+            </div>
+            <div class="form-content"  >
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" th:field="*{nameCustumer}" class="form-control" placeholder="Họ tên"/>
+                            <label style="color: red" th:if="${#fields.hasErrors('nameCustumer')}" th:errors="*{nameCustumer}" > Tên Khách Hàng error</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="date"  th:field="*{birtherday}" class="form-control" placeholder="Ngày sinh"/>
+                            <label style="color: red" th:if="${#fields.hasErrors('birtherday')}" th:errors="*{birtherday}" > Ngày sinh error</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text"  th:field="*{idCard}" class="form-control" placeholder="CMND"/>
+                            <label style="color: red" th:if="${#fields.hasErrors('idCard')}" th:errors="*{idCard}" > CMND error</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" th:field="*{phoneNumber}" class="form-control" placeholder="Số điện thoại"/>
+                            <label style="color: red" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}" > Số điện thoại error</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text"  th:field="*{email}" class="form-control" placeholder="Email" />
+                            <label style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}" > Email error</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text"  th:field="*{address}" class="form-control" placeholder="Địa chỉ *" />
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Registered now" class="btnSubmit">
+            </div>
+        </div>
+    </div>
+</form>
+<th:block th:if="${messger}">
+    <p th:text="${messger}"></p>
+</th:block>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

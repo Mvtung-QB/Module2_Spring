@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head  th:replace="layout :: head"></head>
+<body>
+<tbody th:replace="layout :: tbody"></tbody>
+<form th:object="${myService}">
+
+        <div>
+            <ul><img height="200" width="200" th:src="@{image/__${myService.image}__}" ></ul>
+            <ul th:text=" ${'Tên Dịch Vụ: '+ myService.nameServises }"></ul>
+            <ul th:text="${'Diện tích Sủ DỤng: '+ myService.areaUse + 'm2'}"></ul>
+            <ul th:text="${'Số Người Tối Đa: '+ myService.maxUser+ ' Người'}"></ul>
+            <ul th:text="${'Thuê Theo: '+ myService.idKieuThue.tenKieuThue}"></ul>
+            <ul th:text="${ 'Tiền Đặt Cọc: '+ myService.rentalCosts+ 'VND'}"></ul>
+            <ul th:text="${'Trạng Thái: '+ myService.trangThai}"></ul>
+            <ul th:text="${'Số Tầng: '+ myService.soTang}"></ul>
+        </div>
+</form>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

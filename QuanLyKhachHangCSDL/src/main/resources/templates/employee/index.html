@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="../cssForm.css">
+</head>
+<style>
+    table {
+        width:100%;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+    table#t01 tr:nth-child(even) {
+        background-color: #eee;
+    }
+    table#t01 tr:nth-child(odd) {
+        background-color: #fff;
+    }
+    table#t01 th {
+        background-color: black;
+        color: white;
+    }
+</style>
+
+<body>
+<p ><a th:href="@{/create-employee}">Create Employee </a></p>
+<h1>List employee</h1>
+<form>
+    <table id="t01">
+        <tr>
+            <th>ten</th>
+            <th>tuoi</th>
+            <th>diachi</th>
+            <th>lop</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <th:block th:each="employee : ${employees}">
+            <tr>
+                <td th:text="${employee.ten}"></td>
+                <td th:text="${employee.tuoi}"></td>
+                <td th:text="${employee.diachi}"></td>
+                <td th:text="${employee.lop}"></td>
+                <td><a th:href="@{/edit-employee/__${employee.id}__ }">Edit</a></td>
+                <td><a th:href="@{/delete-employee/__${employee.id}__ }">Delete</a></td>
+            </tr>
+        </th:block>
+    </table>
+</form>
+<form th:action="@{/findbyname}"  method="post">
+    <label>Enter name</label>
+    <input type="text" name="name" placeholder="name"/>
+    <input type="submit" name="find" value="find by name" />
+</form>
+</body>
+</html>

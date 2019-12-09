@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head head th:fragment="head">
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/cssLayout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body id="body">
+<tbody th:fragment="tbody">
+<div  class="jumbotron text-center" style="background-image: url(image/anhnen.jpg)">
+    <div>
+        <img id="logo"  th:src="@{/image/logo.jpg}" style="border-radius: 50%">
+        <h1 style="color: aliceblue">Furama Resort</h1>
+        <p style="color: aliceblue">Wellcom!!!!</p>
+    </div>
+    <div style="float: right; margin-top: auto">
+        <span><a style="color: aliceblue" th:href="@{/registered}">Đăng Kí</a></span>
+        <span><a style="color: aliceblue" href="/login" >Đăng Nhập</a></span>
+    </div>
+</div>
+<nav  class="navbar navbar-default" id="nav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Furama</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a th:href="@{/find}">Tìm Kiếm</a></li>
+            <li><a href="/booking">Booking</a></li>
+            <li><a href="/historycart">History</a></li>
+            <li><a href="/likepage">Liked</a></li>
+        </ul>
+    </div>
+</nav>
+</tbody>
+<footer  th:fragment="footer" style="display: flex; flex-shrink: 0">
+   Mai Van Tung C0919G1
+</footer>
+</body>
+</html>
